@@ -8,10 +8,8 @@
     <style>
         body {
             background-image: url("https://e1.pxfuel.com/desktop-wallpaper/1019/56/desktop-wallpaper-pastel-blue-aesthetic-iphone-cute-aesthetic-iphone-blue.jpg");
-            background-color: no-repeat; 
             background-size: cover;
             color: black;
-            body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
@@ -22,80 +20,62 @@
         section {
             margin-bottom: 20px;
         }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
     </style>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style= font size: 50px;">Perpustakaan UNPRI Medan</h1>
-     <nav class="navbar navbar-default">
+    <h1 style="font-size: 50px;">Perpustakaan UNPRI Medan</h1>
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Perpustakaan UNPRI Medan</a>
+                <a class="navbar-brand" href="#">Perpustakaan Angelia Siagian</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Beranda</a></li>
-                <li><a href="#fitur">Fitur Utama</a></li>
-                <li><a href="#kegunaan">Kegunaan CSS</a></li>
-                <li><a href="#formulir-pemesanan">Pemesanan Buku</a></li>
-                <li><a href="#formulir-perpanjangan">Perpanjangan Peminjaman</a></li>
-                <li><a href="#tabel-buku">Bahan Buku</a></li>
-                <li><a href="#formulir-anggota">Daftar Anggota</a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#formulir">Formulir</a></li>
+                <li><a href="#tabel-buku">Tabel Buku</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-toggle="modal" data-target="#html5Modal">Fitur Utama HTML5</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>
+
     <h2>Welcome To Perpustakaan Angelia Siagian</h2>
     <p>
         Perkenalkan, Nama saya Angelia Siagian dengan NIM 222201004. Ini adalah perpustakaan
         <i>homepage</i> <b>pertama</b> saya, karena saya baru belajar tentang cara membuat
-        <b><i><a href="https://library.usu.ac.id/">website Perpustakaan UNPRI MEDAN </a></i></b>.
+        <b><i><a href="https://library.usu.ac.id/">website Perpustakaan UNPRI MEDAN</a></i></b>.
     </p>
-    <h3>Berikut ini adalah gambar dari gedung Perpustakaan UNPRI Medan.</h3>
-    <h4><center></center>
-            <center></center><img src="https://th.bing.com/th/id/OIP.6M1eJhaGZXoizxLbgM0zOwHaDq?rs=1&pid=ImgDetMain">
-    </h4><center></center>
+    
+    <h1 id="media">Media</h1>
+    <section>
+        <h3>Berikut ini adalah gambar dari gedung Perpustakaan UNPRI Medan.</h3>
+    <img src="https://th.bing.com/th/id/OIP.6M1eJhaGZXoizxLbgM0zOwHaDq?rs=1&pid=ImgDetMain" alt="Perpustakaan UNPRI Medan">
     <p><i>Perpustakaan UNPRI Medan</i></p>
     
     <center>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TJX3PQ2C-Yg?si=XPW05EcrWaZ3uJwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"         </iframe>
-        <p>
-            <audio controls>
-                <source src="music/The 1975 - About You (Official).mp3">
-            </audio>
-        </p>
-
-        <h1>Fitur Utama HTML5</h1>
-
-    <section>
-        <h2>1. Dukungan Multimedia</h2>
-        <p>HTML5 memungkinkan pengembang untuk menyematkan elemen audio dan video secara langsung ke dalam halaman web menggunakan tag <code>&lt;audio&gt;</code> dan <code>&lt;video&gt;</code>. Ini menghilangkan kebutuhan untuk plugin pihak ketiga seperti Adobe Flash, sehingga mempercepat waktu pemuatan halaman dan meningkatkan pengalaman pengguna.</p>
-        
-        <h2>2. Elemen Semantik</h2>
-        <p>Elemen semantik HTML5 memberikan makna lebih pada struktur konten di halaman web. Elemen seperti <code>&lt;article&gt;</code> dan <code>&lt;section&gt;</code> membantu mesin pencari memahami konteks konten, yang berkontribusi pada optimasi mesin pencari (SEO).</p>
-        <h2>3. Sintaks yang Lebih Sederhana</h2>
-        <p>HTML5 memiliki sintaks yang lebih ringkas dan mudah dipahami dibandingkan dengan versi sebelumnya. Ini memudahkan pengembang dalam menulis dan mengelola kode HTML, serta mengurangi kemungkinan kesalahan.</p>
-        <h2>4. Responsif terhadap Perangkat Mobile</h2>
-        <p>HTML5 dirancang untuk mendukung perangkat mobile dengan lebih baik, memungkinkan pembuatan desain responsif yang dapat menyesuaikan tampilan berdasarkan ukuran layar perangkat. Ini sangat penting mengingat meningkatnya penggunaan internet melalui perangkat mobile.</p>
-        <h2>5. Penyimpanan Lokal</h2>
-        <p>HTML5 menyediakan kemampuan penyimpanan lokal melalui Local Storage dan Session Storage, memungkinkan aplikasi web menyimpan data di sisi klien tanpa harus terus-menerus terhubung ke server. Ini meningkatkan kinerja aplikasi web dan memungkinkan akses data saat offline.</p>
-        <h2>6. API Geolokasi</h2>
-        <p>Dengan HTML5, pengembang dapat menggunakan Geolocation API untuk menentukan lokasi geografis pengguna (dengan izin mereka). Fitur ini sangat berguna untuk aplikasi berbasis lokasi seperti layanan pemetaan atau aplikasi pengantaran.</p>
-        <h2>7. Peningkatan Elemen Formulir</h2>
-        <p>HTML5 memperkenalkan berbagai jenis input baru seperti email, date, url, dan lainnya, serta fitur validasi bawaan yang membuat formulir lebih intuitif bagi pengguna.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TJX3PQ2C-Yg?si=XPW05EcrWaZ3uJwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </center>
+    
+    <p>
+        <audio controls>
+            <source src="music/The 1975 - About You (Official).mp3">
+        </audio>
+    </p>
     </section>
-        <h1>Kegunaan Utama CSS</h1>
-
+    
+    <h1 id="formulir">Formulir</h1>
     <section>
-        <h2>1. Pengaturan Tata Letak</h2>
-        <p>CSS memungkinkan pengembang untuk mengatur tata letak elemen di halaman web, seperti posisi, ukuran, dan margin. Ini memudahkan pembuatan desain responsif yang dapat beradaptasi dengan berbagai ukuran layar.</p>
-        <h2>2. Styling Elemen</h2>
-        <p>Dengan CSS, Anda dapat mengubah warna, font, latar belakang, dan gaya elemen HTML. Ini membantu dalam membuat tampilan yang menarik dan konsisten di seluruh situs.</p>
-        <h2>3. Meningkatkan Keterbacaan</h2>
-        <p>Penggunaan ukuran font, spasi, dan warna yang tepat dapat meningkatkan keterbacaan konten di situs web. CSS memungkinkan pengaturan ini dengan mudah.</p>
-        <h2>4. Animasi dan Transisi</h2>
-        <p>CSS juga mendukung animasi dan efek transisi yang membantu menarik perhatian pengguna dan meningkatkan pengalaman pengguna.</p>
-        <h2>5. Pengelolaan Media</h2>
-        <p>Dengan media queries, CSS dapat menyesuaikan tampilan situs web berdasarkan perangkat yang digunakan, seperti smartphone, tablet, atau desktop. Ini penting untuk desain responsif.</p>
-    </section>
         <h2>Formulir Pemesanan Buku</h2>
         <form>
             <table>
@@ -197,7 +177,56 @@
                 </tr>
             </table>
         </form>
+
+        <h2>Formulir Anggota Perpustakaan Program Studi</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>Nama Lengkap:</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Nomor Induk Mahasiswa (NIM):</td>
+                    <td><input type="text" name="NIM" /></td>
+                </tr>
+                <tr>
+                    <td>Program Studi:</td>
+                    <td>
+                        <select name="prodi">
+                            <option value="ilmu perpustakaan">Ilmu Perpustakaan</option>
+                            <option value="informatika">Informatika</option>
+                            <option value="manajemen">Manajemen</option>
+                            <option value="akuntansi">Akuntansi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fakultas:</td>
+                    <td><input type="text" name="fakultas" /></td>
+                </tr>
+                <tr>
+                    <td>Alamat Rumah:</td>
+                    <td><input type="text" name="alamat" /></td>
+                </tr>
+                <tr>
+                    <td>e-mail:</td>
+                    <td><input type="email" name="email" placeholder="@gmail.com" /></td>
+                </tr>
+                <tr>
+                    <td>Nomor Telepon:</td>
+                    <td><input type="number" name="telepon" placeholder="+62..." /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Daftar" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
     
+    <h2 id="tabel-buku">Tabel Bahan Buku</h2>
+    <table>
         <h2>Tabel Bahan Buku</h2>
         <table>
             <tr>
@@ -255,60 +284,53 @@
                 <td>978-0399590504</td>
             </tr>
         </table>
+    </table>
+
+    <div class="modal fade" id="html5Modal" tabindex="-1" role="dialog" aria-labelledby="html5ModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="html5ModalLabel">Fitur Utama HTML5</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2>1. Dukungan Multimedia</h2>
+                    <p>HTML5 memungkinkan pengembang untuk menyematkan elemen audio dan video secara langsung ke dalam halaman web menggunakan tag <code>&lt;audio&gt;</code> dan <code>&lt;video&gt;</code>. Ini menghilangkan kebutuhan untuk plugin pihak ketiga seperti Adobe Flash, sehingga mempercepat waktu pemuatan halaman dan meningkatkan pengalaman pengguna.</p>
+                    
+                    <h2>2. Elemen Semantik</h2>
+                    <p>Elemen semantik HTML5 memberikan makna lebih pada struktur konten di halaman web. Elemen seperti <code>&lt;article&gt;</code> dan <code>&lt;section&gt;</code> membantu mesin pencari memahami konteks konten, yang berkontribusi pada optimasi mesin pencari (SEO).</p>
+                    
+                    <h2>3. Sintaks yang Lebih Sederhana</h2>
+                    <p>HTML5 memiliki sintaks yang lebih ringkas dan mudah dipahami dibandingkan dengan versi sebelumnya. Ini memudahkan pengembang dalam menulis dan mengelola kode HTML, serta mengurangi kemungkinan kesalahan.</p>
+                    
+                    <h2>4. Responsif terhadap Perangkat Mobile</h2>
+                    <p>HTML5 dirancang untuk mendukung perangkat mobile dengan lebih baik, memungkinkan pembuatan desain responsif yang dapat menyesuaikan tampilan berdasarkan ukuran layar perangkat. Ini sangat penting mengingat meningkatnya penggunaan internet melalui perangkat mobile.</p>
+                    
+                    <h2>5. Penyimpanan Lokal</h2>
+                    <p>HTML5 menyediakan kemampuan penyimpanan lokal melalui Local Storage dan Session Storage, memungkinkan aplikasi web menyimpan data di sisi klien tanpa harus terus-menerus terhubung ke server. Ini meningkatkan kinerja aplikasi web dan memungkinkan akses data saat offline.</p>
+                    
+                    <h2>6. API Geolokasi</h2>
+                    <p>Dengan HTML5, pengembang dapat menggunakan Geolocation API untuk menentukan lokasi geografis pengguna (dengan izin mereka). Fitur ini sangat berguna untuk aplikasi berbasis lokasi seperti layanan pemetaan atau aplikasi pengantaran.</p>
+                    
+                    <h2>7. Peningkatan Elemen Formulir</h2>
+                    <p>HTML5 memperkenalkan berbagai jenis input baru seperti email, date, url, dan lainnya, serta fitur validasi bawaan yang membuat formulir lebih intuitif bagi pengguna.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
-    
-        <h2>Formulir Anggota Perpustakaan Program Studi</h2>
-        <form>
-            <table>
-                <tr>
-                    <td>Nama Lengkap:</td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor Induk Mahasiswa (NIM):</td>
-                    <td><input type="text" name="NIM" /></td>
-                </tr>
-                <tr>
-                    <td>Program Studi:</td>
-                    <td>
-                        <select name="prodi">
-                            <option value="ilmu perpustakaan">Ilmu Perpustakaan</option>
-                            <option value="informatika">Informatika</option>
-                            <option value="manajemen">Manajemen</option>
-                            <option value="akuntansi">Akuntansi</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Fakultas:</td>
-                    <td><input type="text" name="fakultas" /></td>
-                </tr>
-                <tr>
-                    <td>Alamat Rumah:</td>
-                    <td><input type="text" name="alamat" /></td>
-                </tr>
-                <tr>
-                    <td>e-mail:</td>
-                    <td><input type="email" name="email" placeholder="@gmail.com" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor Telepon:</td>
-                    <td><input type="number" name="telepon" placeholder="+62..." /></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" value="Daftar" />
-                    </td>
-                </tr>
-            </table>
-        </form>
-    
-        <footer>
-            <p>&copy; 2024 Perpustakaan Angelia Siagian. All Rights Reserved.</p>
-        </footer>
-    </center>
+
+    <footer>
+        <p>&copy; 2024 Perpustakaan Angelia Siagian. All Rights Reserved.</p>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
-
