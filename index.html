@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perpustakaan Angelia Siagian</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             background-image: url("https://e1.pxfuel.com/desktop-wallpaper/1019/56/desktop-wallpaper-pastel-blue-aesthetic-iphone-cute-aesthetic-iphone-blue.jpg");
             background-size: cover;
             color: #333;
             font-family: 'Arial', sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 20px;
         }
@@ -25,18 +24,10 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
 
-        h1, h2 {
+        h1, h2, h3 {
             color: #444;
             text-align: center;
-        }
-
-        h3 {
             margin-top: 20px;
-            text-align: center;
-        }
-
-        section {
-            margin-bottom: 30px;
         }
 
         footer {
@@ -61,43 +52,25 @@
             margin: auto;
         }
 
-        .nav > li > a {
-            padding: 15px 20px;
-        }
-
         .navbar-brand {
             font-weight: bold;
             font-size: 24px;
         }
-          body {
-            background-color: #f8f9fa;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
 
         .full-width-section {
-            width: 100%; /* Make the section full width */
-            padding: 20px; /* Padding for the section */
-            background-color: #fff; /* Background color */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-            margin: 0; /* Remove default margin */
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
         }
 
-        .title {
-            text-align: center;
-            font-size: 36px; /* Standard font size */
-            font-weight: bold; /* Bold text */
-            margin: 20px 0; /* Margin around the title */
+        .welcome-button {
+            margin: 20px auto;
+            display: block;
         }
     </style>
 </head>
 <body>
-
-    <div class="container-fluid">
-        <div class="full-width-section">
-            <h1 class="title">Perpustakaan UNPRI Medan</h1>
-        </div>
-    </div>
 
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -121,34 +94,35 @@
         </div>
     </nav>
 
-      <div class="container">
-        <h1>Perpustakaan UNPRI Medan</h1>
+    <div class="container-fluid">
+        <div class="full-width-section">
+            <h1 class="title">Perpustakaan UNPRI Medan</h1>
+        </div>
+    </div>
 
+    <div class="container">
         <h2>Welcome To Perpustakaan Angelia Siagian</h2>
-        <button class="btn btn-primary btn-block" data-toggle="collapse" data-target="#welcomeText">Click</button>
-        <div id="welcomeText" class="collapse">
-            <p class="text-center">
+        <button class="btn btn-primary welcome-button" data-toggle="collapse" data-target="#welcomeText">Click to Expand</button>
+        <div id="welcomeText" class="collapse text-center">
+            <p>
                 Perkenalkan, Nama saya Angelia Siagian dengan NIM 222201004. Ini adalah perpustakaan
                 <i>homepage</i> <b>pertama</b> saya, karena saya baru belajar tentang cara membuat
                 <b><i><a href="https://library.usu.ac.id/">website Perpustakaan UNPRI MEDAN</a></i></b>.
             </p>
         </div>
-    </div>
-    
-   <div class="container media-section">
-        <h1 id="media" class="text-center mb-4">Media</h1>
-        
-        <section>
+
+        <div class="media-section">
+            <h1 id="media" class="text-center mb-4">Media</h1>
             <h3>Berikut ini adalah gambar dari gedung Perpustakaan UNPRI Medan.</h3>
             <div class="text-center mb-4">
-                <img src="https://th.bing.com/th/id/OIP.6M1eJhaGZXoizxLbgM0zOwHaDq?rs=1&pid=ImgDetMain" alt="Perpustakaan UNPRI Medan" class="media-img">
+                <img src="https://th.bing.com/th/id/OIP.6M1eJhaGZXoizxLbgM0zOwHaDq?rs=1&pid=ImgDetMain" alt="Perpustakaan UNPRI Medan">
                 <p class="mt-2"><i>Perpustakaan UNPRI Medan</i></p>
             </div>
-            
+
             <div class="text-center mb-4">
                 <iframe width="100%" height="315" src="https://www.youtube.com/embed/TJX3PQ2C-Yg?si=XPW05EcrWaZ3uJwQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
             </div>
-            
+
             <div class="text-center mb-4">
                 <h4>THE 1975 - ABOUT YOU</h4>
                 <audio controls class="audio-control">
@@ -156,267 +130,153 @@
                     Your browser does not support the audio element.
                 </audio>
             </div>
-        </section>
-    </div>
+        </div>
+        
+        <div id="formulir" class="mt-5">
+            <h2>Formulir Pemesanan Buku</h2>
+            <form>
+                <table class="table table-bordered">
+                    <tr>
+                        <td>Nama Lengkap:</td>
+                        <td><input type="text" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Nomor Anggota Perpustakaan:</td>
+                        <td><input type="password" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>e-mail:</td>
+                        <td><input type="email" class="form-control" placeholder="@gmail.com" /></td>
+                    </tr>
+                    <tr>
+                        <td>Nomor Telepon:</td>
+                        <td><input type="number" class="form-control" placeholder="+62..." /></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin:</td>
+                        <td>
+                            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+                            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Detail Pemesanan</th>
+                    </tr>
+                    <tr>
+                        <td>Judul Buku Yang Dipesan:</td>
+                        <td><input type="text" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Penulis Buku:</td>
+                        <td><input type="text" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Nomor ISBN:</td>
+                        <td><input type="number" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Pemesanan:</td>
+                        <td><input type="date" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" class="btn btn-primary" value="Kirim" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
 
-    
-    <h1 id="formulir">Formulir</h1>
-    <section>
-        <h2>Formulir Pemesanan Buku</h2>
-        <form>
-            <table>
-                <tr>
-                    <td>Nama Lengkap:</td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor Anggota Perpustkaan:</td>
-                    <td><input type="password" /></td>
-                </tr>
-                <tr>
-                    <td>e-mail:</td>
-                    <td><input type="email" name="email" placeholder="@gmail.com" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor Telepon:</td>
-                    <td><input type="number" name="Nomor Telepon" placeholder="+62..." /></td>
-                </tr>
-                <tr>
-                    <td>Jenis Kelamin:</td>
-                    <td>
-                        <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
-                        <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
-                    </td>
-                </tr>
-                <tr>
-                    <th colspan="2">Detail Pemesanan</th>
-                </tr>
-                <tr>
-                    <td>Judul Buku Yang Dipesan:</td>
-                    <td><input type="text" name="Judul Buku" /></td>
-                </tr>
-                <tr>
-                    <td>Penulis Buku:</td>
-                    <td><input type="text" name="Penulis Buku" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor ISBN:</td>
-                    <td><input type="number" name="Nomor ISBN" /></td>
-                </tr>
-                <tr>
-                    <td>Tanggal Pemesanan:</td>
-                    <td><input type="date" name="Tanggal Pemesanan" /></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" name="submit" value="Kirim" />
-                    </td>
-                </tr>
-            </table>
-        </form>
-    
-        <h2>Formulir Perpanjangan Peminjaman Buku</h2>
-        <form>
-            <table>
-                <tr>
-                    <td>Nama Lengkap:</td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor Anggota Perpustakaan:</td>
-                    <td><input type="password" /></td>
-                </tr>
-                <tr>
-                    <td>e-mail:</td>
-                    <td><input type="email" name="email" placeholder="@gmail.com" /></td>
-                </tr>
-                <tr>
-                    <th colspan="2">Detail Pemesanan Awal</th>
-                </tr>
-                <tr>
-                    <td>Judul Buku Yang Dipesan:</td>
-                    <td><input type="text" name="Judul Buku" /></td>
-                </tr>
-                <tr>
-                    <td>Penulis Buku:</td>
-                    <td><input type="text" name="Penulis Buku" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor ISBN:</td>
-                    <td><input type="number" name="Nomor ISBN" /></td>
-                </tr>
-                <tr>
-                    <th colspan="2">Perpanjangan Peminjaman Buku</th>
-                </tr>
-                <tr>
-                    <td>Tanggal Perpanjangan Peminjaman Buku:</td>
-                    <td><input type="date" name="Tanggal Perpanjang Peminjaman Buku" /></td>
-                </tr>
-                <tr>
-                    <td>Alasan Perpanjangan:</td>
-                    <td><input type="text" name="Alasan Perpanjangan" /></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" name="submit" value="Kirim" />
-                    </td>
-                </tr>
-            </table>
-        </form>
+            <h2>Formulir Perpanjangan Peminjaman Buku</h2>
+            <form>
+                <table class="table table-bordered">
+                    <tr>
+                        <td>Nama Lengkap:</td>
+                        <td><input type="text" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Nomor Anggota Perpustakaan:</td>
+                        <td><input type="password" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>e-mail:</td>
+                        <td><input type="email" class="form-control" placeholder="@gmail.com" /></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Detail Pemesanan Awal</th>
+                    </tr>
+                    <tr>
+                        <td>Judul Buku Yang Dipesan:</td>
+                        <td><input type="text" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Penulis Buku:</td>
+                        <td><input type="text" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Nomor ISBN:</td>
+                        <td><input type="number" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Pemesanan:</td>
+                        <td><input type="date" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Perpanjangan:</td>
+                        <td><input type="date" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" class="btn btn-primary" value="Kirim" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
 
-        <h2>Formulir Anggota Perpustakaan Program Studi</h2>
-        <form>
-            <table>
-                <tr>
-                    <td>Nama Lengkap:</td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor Induk Mahasiswa (NIM):</td>
-                    <td><input type="text" name="NIM" /></td>
-                </tr>
-                <tr>
-                    <td>Program Studi:</td>
-                    <td>
-                        <select name="prodi">
-                            <option value="ilmu perpustakaan">Ilmu Perpustakaan</option>
-                            <option value="informatika">Informatika</option>
-                            <option value="manajemen">Manajemen</option>
-                            <option value="akuntansi">Akuntansi</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Fakultas:</td>
-                    <td><input type="text" name="fakultas" /></td>
-                </tr>
-                <tr>
-                    <td>Alamat Rumah:</td>
-                    <td><input type="text" name="alamat" /></td>
-                </tr>
-                <tr>
-                    <td>e-mail:</td>
-                    <td><input type="email" name="email" placeholder="@gmail.com" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor Telepon:</td>
-                    <td><input type="number" name="telepon" placeholder="+62..." /></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" value="Daftar" />
-                    </td>
-                </tr>
+        <div id="tabel-buku" class="mt-5">
+            <h2>Tabel Buku</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul Buku</th>
+                        <th>Penulis</th>
+                        <th>Tahun Terbit</th>
+                        <th>ISBN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Judul Buku 1</td>
+                        <td>Penulis 1</td>
+                        <td>2020</td>
+                        <td>1234567890</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Judul Buku 2</td>
+                        <td>Penulis 2</td>
+                        <td>2021</td>
+                        <td>1234567891</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Judul Buku 3</td>
+                        <td>Penulis 3</td>
+                        <td>2022</td>
+                        <td>1234567892</td>
+                    </tr>
+                </tbody>
             </table>
-        </form>
-    </section>
-    
-    <h2 id="tabel-buku">Tabel Bahan Buku</h2>
-    <table>
-        <h2>Tabel Bahan Buku</h2>
-        <table>
-            <tr>
-                <th>No.</th>
-                <th>Judul Buku</th>
-                <th>Pengarang</th>
-                <th>Penerbit</th>
-                <th>Tahun Terbit</th>
-                <th>Jumlah Halaman</th>
-                <th>ISBN</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>"The Power of Habit"</td>
-                <td>Charles Duhigg</td>
-                <td>Random House</td>
-                <td>2012</td>
-                <td>371</td>
-                <td>978-0812981605</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>"Thinking, Fast and Slow"</td>
-                <td>Daniel Kahneman</td>
-                <td>Farrar, Straus and Giroux</td>
-                <td>2011</td>
-                <td>499</td>
-                <td>978-0374533557</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>"Sapiens: A Brief History of Humankind"</td>
-                <td>Yuval Noah Harari</td>
-                <td>Harper</td>
-                <td>2015</td>
-                <td>498</td>
-                <td>978-0062316097</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>"Atomic Habits"</td>
-                <td>James Clear</td>
-                <td>Avery</td>
-                <td>2018</td>
-                <td>320</td>
-                <td>978-0735211292</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>"Educated"</td>
-                <td>Tara Westover</td>
-                <td>Random House</td>
-                <td>2018</td>
-                <td>334</td>
-                <td>978-0399590504</td>
-            </tr>
-        </table>
-    </table>
-
-    <div class="modal fade" id="html5Modal" tabindex="-1" role="dialog" aria-labelledby="html5ModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="html5ModalLabel">Fitur Utama HTML5</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <h2>1. Dukungan Multimedia</h2>
-                    <p>HTML5 memungkinkan pengembang untuk menyematkan elemen audio dan video secara langsung ke dalam halaman web menggunakan tag <code>&lt;audio&gt;</code> dan <code>&lt;video&gt;</code>. Ini menghilangkan kebutuhan untuk plugin pihak ketiga seperti Adobe Flash, sehingga mempercepat waktu pemuatan halaman dan meningkatkan pengalaman pengguna.</p>
-                    
-                    <h2>2. Elemen Semantik</h2>
-                    <p>Elemen semantik HTML5 memberikan makna lebih pada struktur konten di halaman web. Elemen seperti <code>&lt;article&gt;</code> dan <code>&lt;section&gt;</code> membantu mesin pencari memahami konteks konten, yang berkontribusi pada optimasi mesin pencari (SEO).</p>
-                    
-                    <h2>3. Sintaks yang Lebih Sederhana</h2>
-                    <p>HTML5 memiliki sintaks yang lebih ringkas dan mudah dipahami dibandingkan dengan versi sebelumnya. Ini memudahkan pengembang dalam menulis dan mengelola kode HTML, serta mengurangi kemungkinan kesalahan.</p>
-                    
-                    <h2>4. Responsif terhadap Perangkat Mobile</h2>
-                    <p>HTML5 dirancang untuk mendukung perangkat mobile dengan lebih baik, memungkinkan pembuatan desain responsif yang dapat menyesuaikan tampilan berdasarkan ukuran layar perangkat. Ini sangat penting mengingat meningkatnya penggunaan internet melalui perangkat mobile.</p>
-                    
-                    <h2>5. Penyimpanan Lokal</h2>
-                    <p>HTML5 menyediakan kemampuan penyimpanan lokal melalui Local Storage dan Session Storage, memungkinkan aplikasi web menyimpan data di sisi klien tanpa harus terus-menerus terhubung ke server. Ini meningkatkan kinerja aplikasi web dan memungkinkan akses data saat offline.</p>
-                    
-                    <h2>6. API Geolokasi</h2>
-                    <p>Dengan HTML5, pengembang dapat menggunakan Geolocation API untuk menentukan lokasi geografis pengguna (dengan izin mereka). Fitur ini sangat berguna untuk aplikasi berbasis lokasi seperti layanan pemetaan atau aplikasi pengantaran.</p>
-                    
-                    <h2>7. Peningkatan Elemen Formulir</h2>
-                    <p>HTML5 memperkenalkan berbagai jenis input baru seperti email, date, url, dan lainnya, serta fitur validasi bawaan yang membuat formulir lebih intuitif bagi pengguna.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-                </div>
-            </div>
         </div>
     </div>
 
-    
-
     <footer>
-        <p>&copy; 2024 Perpustakaan Angelia Siagian. All Rights Reserved.</p>
+        <p>Perpustakaan UNPRI © 2024</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
-</html> 
+</html>
