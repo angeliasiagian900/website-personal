@@ -71,20 +71,28 @@
         }
          body {
             background-color: #f8f9fa;
-            color: #333;
             font-family: 'Arial', sans-serif;
             padding: 20px;
         }
 
         .title {
             text-align: center;
-            font-size: 48px; /* Increased font size */
+            font-size: 60px; /* Increased font size */
             font-weight: bold; /* Bold text */
+            color: #fff; /* White text */
             text-transform: uppercase; /* Uppercase letters */
-            color: #007bff; /* Text color */
             letter-spacing: 2px; /* Space between letters */
             margin: 20px 0; /* Margin around the title */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+            padding: 20px; /* Padding for better spacing */
+            background: linear-gradient(90deg, #007bff, #6610f2); /* Gradient background */
+            -webkit-background-clip: text; /* Clip the background to text */
+            -webkit-text-fill-color: transparent; /* Make text fill transparent for gradient effect */
+            animation: glow 1.5s infinite alternate; /* Animation for glow effect */
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #007bff, 0 0 10px #6610f2; }
+            100% { text-shadow: 0 0 20px #007bff, 0 0 30px #6610f2; }
         }
     </style>
 </head>
