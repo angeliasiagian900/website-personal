@@ -69,11 +69,31 @@
             font-weight: bold;
             font-size: 24px;
         }
+         body {
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 48px; /* Increased font size */
+            font-weight: bold; /* Bold text */
+            text-transform: uppercase; /* Uppercase letters */
+            color: #007bff; /* Text color */
+            letter-spacing: 2px; /* Space between letters */
+            margin: 20px 0; /* Margin around the title */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+        }
     </style>
 </head>
 <body>
 
-    <h1 style="font-size: 50px;">Perpustakaan UNPRI Medan</h1>
+    <div class="container">
+        <h1 class="title">Perpustakaan UNPRI Medan</h1>
+    </div>
+
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -100,7 +120,7 @@
         <h1>Perpustakaan UNPRI Medan</h1>
 
         <h2>Welcome To Perpustakaan Angelia Siagian</h2>
-        <button class="btn btn-primary btn-block" data-toggle="collapse" data-target="#welcomeText">Click to Expand</button>
+        <button class="btn btn-primary btn-block" data-toggle="collapse" data-target="#welcomeText">Click</button>
         <div id="welcomeText" class="collapse">
             <p class="text-center">
                 Perkenalkan, Nama saya Angelia Siagian dengan NIM 222201004. Ini adalah perpustakaan
