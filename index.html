@@ -99,198 +99,245 @@
     </nav>
 </div>
 
-   <div class="container">
-    <h1>Perpustakaan UNPRI</h1>
-    <h2>Welcome To Perpustakaan Angelia Siagian</h2>
-    <div class="welcome-text">
-        <p class="text-center">
+  <div class="container text-center my-5">
+    <h1 class="display-4 font-weight-bold text-primary">Perpustakaan UNPRI</h1>
+    <h2 class="text-secondary mb-4">Welcome To Perpustakaan Angelia Siagian</h2>
+    <div class="welcome-text bg-light p-4 rounded shadow">
+        <p>
             Perkenalkan, Nama saya Angelia Siagian dengan NIM 222201004. Ini adalah perpustakaan
             <i>homepage</i> <b>pertama</b> saya, karena saya baru belajar tentang cara membuat
-            <b><i><a href="https://library.usu.ac.id/">website Perpustakaan UNPRI MEDAN</a></i></b>.
+            <b><i><a href="https://library.usu.ac.id/" class="text-primary">website Perpustakaan UNPRI MEDAN</a></i></b>.
         </p>
     </div>
 </div>
     
-   <div class="container media-section">
-        <h1 id="media" class="text-center mb-4">Media</h1>
-        
-        <section>
-            <h3>Berikut ini adalah gambar dari gedung Perpustakaan UNPRI Medan.</h3>
-            <div class="text-center mb-4">
-                <img src="https://th.bing.com/th/id/OIP.6M1eJhaGZXoizxLbgM0zOwHaDq?rs=1&pid=ImgDetMain" alt="Perpustakaan UNPRI Medan" class="media-img">
-                <p class="mt-2"><i>Perpustakaan UNPRI Medan</i></p>
-            </div>
-            
-            <div class="text-center mb-4">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/TJX3PQ2C-Yg?si=XPW05EcrWaZ3uJwQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-            </div>
-            
-            <div class="text-center mb-4">
-                <h4>THE 1975 - ABOUT YOU</h4>
-                <audio controls class="audio-control">
-                    <source src="music/The 1975 - About You (Official).mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-        </section>
-    </div>
-
+<div class="container media-section my-5">
+    <h1 id="media" class="text-center mb-4">Media</h1>
     
-    <h1 id="formulir">Formulir</h1>
     <section>
-        <h2>Formulir Pemesanan Buku</h2>
-        <form>
-            <table>
-                <tr>
-                    <td>Nama Lengkap:</td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor Anggota Perpustkaan:</td>
-                    <td><input type="password" /></td>
-                </tr>
-                <tr>
-                    <td>e-mail:</td>
-                    <td><input type="email" name="email" placeholder="@gmail.com" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor Telepon:</td>
-                    <td><input type="number" name="Nomor Telepon" placeholder="+62..." /></td>
-                </tr>
-                <tr>
-                    <td>Jenis Kelamin:</td>
-                    <td>
-                        <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
-                        <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
-                    </td>
-                </tr>
-                <tr>
-                    <th colspan="2">Detail Pemesanan</th>
-                </tr>
-                <tr>
-                    <td>Judul Buku Yang Dipesan:</td>
-                    <td><input type="text" name="Judul Buku" /></td>
-                </tr>
-                <tr>
-                    <td>Penulis Buku:</td>
-                    <td><input type="text" name="Penulis Buku" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor ISBN:</td>
-                    <td><input type="number" name="Nomor ISBN" /></td>
-                </tr>
-                <tr>
-                    <td>Tanggal Pemesanan:</td>
-                    <td><input type="date" name="Tanggal Pemesanan" /></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" name="submit" value="Kirim" />
-                    </td>
-                </tr>
-            </table>
+        <h3 class="text-center mb-4">Berikut ini adalah gambar dari gedung Perpustakaan UNPRI Medan.</h3>
+        
+        <div class="text-center mb-4">
+            <img src="https://th.bing.com/th/id/OIP.6M1eJhaGZXoizxLbgM0zOwHaDq?rs=1&pid=ImgDetMain" alt="Perpustakaan UNPRI Medan" class="img-responsive center-block" style="max-width: 100%; height: auto;">
+            <p class="mt-2"><i>Perpustakaan UNPRI Medan</i></p>
+        </div>
+        
+        <div class="text-center mb-4">
+            <h4 class="mb-3">Video Perpustakaan UNPRI</h4>
+            <iframe class="embed-responsive-item" width="100%" height="315" src="https://www.youtube.com/embed/TJX3PQ2C-Yg?si=XPW05EcrWaZ3uJwQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <div class="text-center mb-4">
+            <h4>THE 1975 - ABOUT YOU</h4>
+            <audio controls class="audio-control">
+                <source src="music/The 1975 - About You (Official).mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+</div>
+
+    
+    <div class="container my-5">
+    <h1 id="formulir" class="text-center mb-4">Formulir</h1>
+    
+    <section>
+        <h2 class="mb-3">Formulir Pemesanan Buku</h2>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="nama">Nama Lengkap:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nama" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="nomorAnggota">Nomor Anggota Perpustakaan:</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="nomorAnggota" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">e-mail:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="@gmail.com" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="telepon">Nomor Telepon:</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="telepon" placeholder="+62..." />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Jenis Kelamin:</label>
+                <div class="col-sm-10">
+                    <label class="radio-inline"><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+                    <label class="radio-inline"><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <h4>Detail Pemesanan</h4>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="judulBuku">Judul Buku Yang Dipesan:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="judulBuku" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="penulisBuku">Penulis Buku:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="penulisBuku" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="isbn">Nomor ISBN:</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="isbn" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="tanggalPemesanan">Tanggal Pemesanan:</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="tanggalPemesanan" />
+                </div>
+            </div>
+            <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                </div>
+            </div>
         </form>
     
-        <h2>Formulir Perpanjangan Peminjaman Buku</h2>
-        <form>
-            <table>
-                <tr>
-                    <td>Nama Lengkap:</td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor Anggota Perpustakaan:</td>
-                    <td><input type="password" /></td>
-                </tr>
-                <tr>
-                    <td>e-mail:</td>
-                    <td><input type="email" name="email" placeholder="@gmail.com" /></td>
-                </tr>
-                <tr>
-                    <th colspan="2">Detail Pemesanan Awal</th>
-                </tr>
-                <tr>
-                    <td>Judul Buku Yang Dipesan:</td>
-                    <td><input type="text" name="Judul Buku" /></td>
-                </tr>
-                <tr>
-                    <td>Penulis Buku:</td>
-                    <td><input type="text" name="Penulis Buku" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor ISBN:</td>
-                    <td><input type="number" name="Nomor ISBN" /></td>
-                </tr>
-                <tr>
-                    <th colspan="2">Perpanjangan Peminjaman Buku</th>
-                </tr>
-                <tr>
-                    <td>Tanggal Perpanjangan Peminjaman Buku:</td>
-                    <td><input type="date" name="Tanggal Perpanjang Peminjaman Buku" /></td>
-                </tr>
-                <tr>
-                    <td>Alasan Perpanjangan:</td>
-                    <td><input type="text" name="Alasan Perpanjangan" /></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" name="submit" value="Kirim" />
-                    </td>
-                </tr>
-            </table>
+        <h2 class="mt-5 mb-3">Formulir Perpanjangan Peminjaman Buku</h2>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="namaPerpanjang">Nama Lengkap:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="namaPerpanjang" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="nomorAnggotaPerpanjang">Nomor Anggota Perpustakaan:</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="nomorAnggotaPerpanjang" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="emailPerpanjang">e-mail:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="emailPerpanjang" placeholder="@gmail.com" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <h4>Detail Pemesanan Awal</h4>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="judulBukuPerpanjang">Judul Buku Yang Dipesan:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="judulBukuPerpanjang" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="penulisBukuPerpanjang">Penulis Buku:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="penulisBukuPerpanjang" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="isbnPerpanjang">Nomor ISBN:</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="isbnPerpanjang" />
+                </div>
+            </div>
+            <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                    <h4>Perpanjangan Peminjaman Buku</h4>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="tanggalPerpanjang">Tanggal Perpanjangan Peminjaman Buku:</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="tanggalPerpanjang" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="alasanPerpanjang">Alasan Perpanjangan:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="alasanPerpanjang" />
+                </div>
+            </div>
+            <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                </div>
+            </div>
         </form>
 
-        <h2>Formulir Anggota Perpustakaan Program Studi</h2>
-        <form>
-            <table>
-                <tr>
-                    <td>Nama Lengkap:</td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor Induk Mahasiswa (NIM):</td>
-                    <td><input type="text" name="NIM" /></td>
-                </tr>
-                <tr>
-                    <td>Program Studi:</td>
-                    <td>
-                        <select name="prodi">
-                            <option value="ilmu perpustakaan">Ilmu Perpustakaan</option>
-                            <option value="informatika">Informatika</option>
-                            <option value="manajemen">Manajemen</option>
-                            <option value="akuntansi">Akuntansi</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Fakultas:</td>
-                    <td><input type="text" name="fakultas" /></td>
-                </tr>
-                <tr>
-                    <td>Alamat Rumah:</td>
-                    <td><input type="text" name="alamat" /></td>
-                </tr>
-                <tr>
-                    <td>e-mail:</td>
-                    <td><input type="email" name="email" placeholder="@gmail.com" /></td>
-                </tr>
-                <tr>
-                    <td>Nomor Telepon:</td>
-                    <td><input type="number" name="telepon" placeholder="+62..." /></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" value="Daftar" />
-                    </td>
-                </tr>
-            </table>
+        <h2 class="mt-5 mb-3">Formulir Anggota Perpustakaan Program Studi</h2>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="namaAnggota">Nama Lengkap:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="namaAnggota" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="nim">Nomor Induk Mahasiswa (NIM):</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nim" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="prodi">Program Studi:</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="prodi">
+                        <option value="ilmu perpustakaan">Ilmu Perpustakaan</option>
+                        <option value="informatika">Informatika</option>
+                        <option value="manajemen">Manajemen</option>
+                        <option value="akuntansi">Akuntansi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="fakultas">Fakultas:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="fakultas" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="alamat">Alamat Rumah:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="alamat" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="emailAnggota">e-mail:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="emailAnggota" placeholder="@gmail.com" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="teleponAnggota">Nomor Telepon:</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="teleponAnggota" placeholder="+62..." />
+                </div>
+            </div>
+            <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Daftar</button>
+                </div>
+            </div>
         </form>
     </section>
     
-    <h2 id="tabel-buku">Tabel Bahan Buku</h2>
-    <table>
-        <h2>Tabel Bahan Buku</h2>
-        <table>
+    <h2 id="tabel-buku" class="text-center mt-5 mb-4">Tabel Bahan Buku</h2>
+    <table class="table table-bordered table-striped">
+        <thead>
             <tr>
                 <th>No.</th>
                 <th>Judul Buku</th>
@@ -300,6 +347,8 @@
                 <th>Jumlah Halaman</th>
                 <th>ISBN</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td>1</td>
                 <td>"The Power of Habit"</td>
@@ -345,9 +394,9 @@
                 <td>334</td>
                 <td>978-0399590504</td>
             </tr>
-        </table>
+        </tbody>
     </table>
-
+</div>
     <div class="modal fade" id="html5Modal" tabindex="-1" role="dialog" aria-labelledby="html5ModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
