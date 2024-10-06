@@ -1,11 +1,31 @@
- }
-        table {
-            margin-bottom: 50px;
-        }
-        table, th, td {
-            border: 1px solid white;
-            border-collapse: collapse;
-        }
+.table {
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.table thead th {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table tbody td {
+    vertical-align: middle;
+    text-align: center;
+}
+
         th, td {
             padding: 10px;
             text-align: center;
