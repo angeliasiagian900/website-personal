@@ -82,7 +82,7 @@
             object-fit: cover;
         }
 
-        .details-btn {
+         .details-btn {
             background-color: #007bff;
             color: white;
             border: none;
@@ -93,12 +93,12 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
+            margin-left: auto; 
         }
 
         .details-btn:hover {
             background-color: #0056b3;
-            transform: translateY(-2px); /* Efek angkat saat hover */
-        }
+            transform: translateY(-2px); 
 
         #book-detail {
             margin-top: 20px;
@@ -440,27 +440,27 @@
         <li class="book-item">
             <img src="picture/download.jpeg" alt="The Power of Habit">
             <span>"The Power of Habit"</span>
-            <button class="details-btn">Detail</button>
+            <button class="details-btn" data-index="0">Detail</button>
         </li>
         <li class="book-item">
-            <img src="picture/download (1).jpeg" alt="Thinking, Fast and Slow">
+            <img src="picture/download (1)" alt="Thinking, Fast and Slow">
             <span>"Thinking, Fast and Slow"</span>
-            <button class="details-btn">Detail</button>
+            <button class="details-btn" data-index="1">Detail</button>
         </li>
         <li class="book-item">
-            <img src="picture/download (2).jpeg" alt="Sapiens: A Brief History of Humankind">
+            <img src="picture/download (2)" alt="Sapiens: A Brief History of Humankind">
             <span>"Sapiens: A Brief History of Humankind"</span>
-            <button class="details-btn">Detail</button>
+            <button class="details-btn" data-index="2">Detail</button>
         </li>
         <li class="book-item">
-            <img src="picture/download (3).jpeg" alt="Atomic Habits">
+            <img src="picture/download (3)" alt="Atomic Habits">
             <span>"Atomic Habits"</span>
-            <button class="details-btn">Detail</button>
+            <button class="details-btn" data-index="3">Detail</button>
         </li>
         <li class="book-item">
-            <img src="picture/download (4).jpeg" alt="Educated">
+            <img src="picture/download (4)" alt="Educated">
             <span>"Educated"</span>
-            <button class="details-btn">Detail</button>
+            <button class="details-btn" data-index="4">Detail</button>
         </li>
     </ul>
     
@@ -577,23 +577,38 @@
     <script src="js/bootstrap.min.js"></script>
 
 <script>
-    const bookDetails = {
-        "The Power of Habit": "Written by Charles Duhigg, published in 2012. A guide to understanding how habits work and how to change them.",
-        "Thinking, Fast and Slow": "Written by Daniel Kahneman, published in 2011. Insights into how our minds work and how we make decisions.",
-        "Sapiens: A Brief History of Humankind": "Written by Yuval Noah Harari, published in 2015. A narrative of human history from the Stone Age to the modern age.",
-        "Atomic Habits": "Written by James Clear, published in 2018. A practical guide on how to form good habits and break bad ones.",
-        "Educated": "Written by Tara Westover, published in 2018. A memoir about a woman who grows up in a strict and abusive household in rural Idaho but eventually escapes to learn about the broader world through education."
-    };
+   const bookDetails = [
+        {
+            title: "The Power of Habit",
+            detail: "Written by Charles Duhigg, published in 2012. A guide to understanding how habits work and how to change them."
+        },
+        {
+            title: "Thinking, Fast and Slow",
+            detail: "Written by Daniel Kahneman, published in 2011. Insights into how our minds work and how we make decisions."
+        },
+        {
+            title: "Sapiens: A Brief History of Humankind",
+            detail: "Written by Yuval Noah Harari, published in 2015. A narrative of human history from the Stone Age to the modern age."
+        },
+        {
+            title: "Atomic Habits",
+            detail: "Written by James Clear, published in 2018. A practical guide on how to form good habits and break bad ones."
+        },
+        {
+            title: "Educated",
+            detail: "Written by Tara Westover, published in 2018. A memoir about a woman who grows up in a strict and abusive household in rural Idaho but eventually escapes to learn about the broader world through education."
+        }
+    ];
 
     const detailButtons = document.querySelectorAll('.details-btn');
 
     detailButtons.forEach(button => {
         button.addEventListener('click', function() {
-            const bookTitle = this.previousElementSibling.textContent; 
+            const index = this.getAttribute('data-index'); 
             const detailDiv = document.getElementById('book-detail');
 
-            if (bookDetails[bookTitle]) {
-                detailDiv.innerHTML = `<h4>Detail Buku:</h4><p>${bookDetails[bookTitle]}</p>`;
+            if (bookDetails[index]) {
+                detailDiv.innerHTML = `<h4>Detail Buku:</h4><p>${bookDetails[index].detail}</p>`;
             } else {
                 detailDiv.innerHTML = `<p>Detail untuk buku ini tidak tersedia.</p>`;
             }
