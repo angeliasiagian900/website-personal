@@ -465,8 +465,60 @@
     <script src="js/bootstrap.min.js"></script>
 
 <script>
+    // Variabel untuk menyimpan data peminjam
+    let peminjam = [];
     
+    // Fungsi untuk menambah peminjam
+    function tambahPeminjam() {
+        let nama = prompt("Masukkan nama peminjam:");
+        let judulBuku = prompt("Masukkan judul buku yang dipinjam:");
+
+        // Menambahkan data peminjam ke dalam array
+        peminjam.push({
+            nama: nama,
+            judulBuku: judulBuku
+        });
+
+        alert("Data peminjam telah ditambahkan!");
+    }
+
+    // Fungsi untuk menampilkan semua peminjam
+    function tampilkanPeminjam() {
+        if (peminjam.length === 0) {
+            alert("Tidak ada peminjam saat ini.");
+            return;
+        }
+
+        let daftarPeminjam = "Daftar Peminjam:\n";
+        for (let i = 0; i < peminjam.length; i++) {
+            daftarPeminjam += (i + 1) + ". " + peminjam[i].nama + " - " + peminjam[i].judulBuku + "\n";
+        }
+        alert(daftarPeminjam);
+    }
+
+    // Fungsi utama untuk menjalankan program
+    function main() {
+        let pilihan;
+        do {
+            pilihan = parseInt(prompt("Pilih opsi:\n1. Tambah Peminjam\n2. Tampilkan Peminjam\n3. Keluar"));
+
+            // Struktur kondisi untuk menentukan aksi yang dilakukan
+            if (pilihan === 1) {
+                tambahPeminjam();
+            } else if (pilihan === 2) {
+                tampilkanPeminjam();
+            } else if (pilihan === 3) {
+                alert("Terima kasih! Program selesai.");
+            } else {
+                alert("Pilihan tidak valid. Silakan coba lagi.");
+            }
+        } while (pilihan !== 3);
+    }
+
+    // Menjalankan fungsi utama
+    main();
 </script>
+
     
 </body>
 </html>  
