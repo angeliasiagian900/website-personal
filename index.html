@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Wince Simarmata</title>
+    <title>Perpustakaan Angelia Siagian</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-image: url("picture/efa2c05b-5f7e-430f-a22e-867136c5e31e.jpg");
+            background-image: url("picture/19546.jpg");
             background-size: cover;
             color: #333;
             font-family: 'Arial', sans-serif;
@@ -51,6 +51,25 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
+        .media-section {
+            margin-top: 50px;
+        }
+
+        .audio-control {
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .nav > li > a {
+            padding: 15px 20px;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 24px;
+        } 
+
         .book-item {
             display: flex;
             align-items: center;
@@ -65,8 +84,8 @@
         }
 
         .book-info {
-            flex: 1;
-            text-align: left;
+            flex: 1; 
+            text-align: left; 
         }
 
         .details-btn {
@@ -80,12 +99,12 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-left: auto;
+            margin-left: 20px;
         }
 
         .details-btn:hover {
             background-color: #0056b3;
-            transform: translateY(-2px);
+            transform: translateY(-2px); 
         }
 
         .book-detail {
@@ -95,164 +114,163 @@
             border-radius: 5px;
             background: #f9f9f9;
             display: none; 
+            width: 100%; 
         }
     </style>
 </head>
-<body>
-    <h2 id="tabel-buku" class="text-center mt-5 mb-4">Tabel Bahan Buku</h2>
-    <table class="table table-bordered table-striped">
-        <thead>
-            <tr>
-                <th>No.</th>
-                <th>Judul Buku</th>
-                <th>Pengarang</th>
-                <th>Penerbit</th>
-                <th>Tahun Terbit</th>
-                <th>Jumlah Halaman</th>
-                <th>ISBN</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>"10 Langkah Mencerdaskan Kota"</td>
-                <td>Sutriadi</td>
-                <td>ITB Press</td>
-                <td>2018</td>
-                <td>321</td>
-                <td>978-602-5417-25-2</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>"Melangkah"</td>
-                <td>JS Khairen</td>
-                <td>Gramedia Widiasarana Indonesia</td>
-                <td>2020</td>
-                <td>368</td>
-                <td>978-6020523316</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>"Ilmu Jalanan"</td>
-                <td>Rico Tampenawas</td>
-                <td>Elex Media Komputindo</td>
-                <td>2018</td>
-                <td>212</td>
-                <td>SCOOPG162268</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>"Mengenal Diri Sendiri"</td>
-                <td>Eka Silvana</td>
-                <td>Anak Hebat Indonesia</td>
-                <td>2023</td>
-                <td>182</td>
-                <td>978-6234007480</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>"Outliers (Rahasia di balik kesuksesan)"</td>
-                <td>Malcolm Gladwell</td>
-                <td>Gramedia Pustaka Utama</td>
-                <td>2020</td>
-                <td>354</td>
-                <td>978-9792244762</td>
-            </tr>
-        </tbody>
-    </table> 
+<body>  
 
-    <div class="container">
-        <h3>Pameran Buku</h3>
-        <ul id="book-list" class="list-unstyled">
-            <li class="book-item">
-                <img src="picture/download (5).jpeg" alt="10 Langkah Mencerdaskan Kota">
-                <div class="book-info">
-                    <span>"10 Langkah Mencerdaskan Kota"</span>
-                    <div class="book-detail" id="detail-0"></div>
-                </div>
-                <button class="details-btn" data-index="0">Detail</button>
-            </li>
-            <li class="book-item">
-                <img src="picture/download (6).jpeg" alt="Melangkah">
-                <div class="book-info">
-                    <span>"Melangkah"</span>
-                    <div class="book-detail" id="detail-1"></div>
-                </div>
-                <button class="details-btn" data-index="1">Detail</button>
-            </li>
-            <li class="book-item">
-                <img src="picture/download (7).jpeg" alt="Ilmu Jalanan">
-                <div class="book-info">
-                    <span>"Ilmu Jalanan"</span>
-                    <div class="book-detail" id="detail-2"></div>
-                </div>
-                <button class="details-btn" data-index="2">Detail</button>
-            </li>
-            <li class="book-item">
-                <img src="picture/download (8).jpeg" alt="Mengenal Diri Sendiri">
-                <div class="book-info">
-                    <span>"Mengenal Diri Sendiri"</span>
-                    <div class="book-detail" id="detail-3"></div>
-                </div>
-                <button class="details-btn" data-index="3">Detail</button>
-            </li>
-            <li class="book-item">
-                <img src="picture/download.png" alt="Outliers">
-                <div class="book-info">
-                    <span>"Outliers (Rahasia di balik kesuksesan)"</span>
-                    <div class="book-detail" id="detail-4"></div>
-                </div>
-                <button class="details-btn" data-index="4">Detail</button>
-            </li>
-        </ul>
-    </div>
+<h2 id="tabel-buku" class="text-center mt-5 mb-4">Tabel Bahan Buku</h2>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>Judul Buku</th>
+            <th>Pengarang</th>
+            <th>Penerbit</th>
+            <th>Tahun Terbit</th>
+            <th>Jumlah Halaman</th>
+            <th>ISBN</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>"The Power of Habit"</td>
+            <td>Charles Duhigg</td>
+            <td>Random House</td>
+            <td>2012</td>
+            <td>371</td>
+            <td>978-0812981605</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>"Thinking, Fast and Slow"</td>
+            <td>Daniel Kahneman</td>
+            <td>Farrar, Straus and Giroux</td>
+            <td>2011</td>
+            <td>499</td>
+            <td>978-0374533557</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>"Sapiens: A Brief History of Humankind"</td>
+            <td>Yuval Noah Harari</td>
+            <td>Harper</td>
+            <td>2015</td>
+            <td>498</td>
+            <td>978-0062316097</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>"Atomic Habits"</td>
+            <td>James Clear</td>
+            <td>Avery</td>
+            <td>2018</td>
+            <td>320</td>
+            <td>978-0735211292</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>"Educated"</td>
+            <td>Tara Westover</td>
+            <td>Random House</td>
+            <td>2018</td>
+            <td>334</td>
+            <td>978-0399590504</td>
+        </tr>
+    </tbody>     
+</table>
 
-    <footer>
-        <p>&copy; 2024 Perpustakaan Wince Simarmata. All Rights Reserved.</p>
-    </footer>
+<div class="container">
+    <h3>Pameran Buku</h3>
+    <ul id="book-list" class="list-unstyled">
+        <li class="book-item">
+            <img src="picture/download.jpeg" alt="The Power of Habit">
+            <div class="book-info">
+                <span>"The Power of Habit"</span>
+                <div class="book-detail" id="detail-0"></div>
+            </div>
+            <button class="details-btn" data-index="0">Detail</button>
+        </li>
+        <li class="book-item">
+            <img src="picture/download (1).jpeg" alt="Thinking, Fast and Slow">
+            <div class="book-info">
+                <span>"Thinking, Fast and Slow"</span>
+                <div class="book-detail" id="detail-1"></div>
+            </div>
+            <button class="details-btn" data-index="1">Detail</button>
+        </li>
+        <li class="book-item">
+            <img src="picture/download (2).jpeg" alt="Sapiens: A Brief History of Humankind">
+            <div class="book-info">
+                <span>"Sapiens: A Brief History of Humankind"</span>
+                <div class="book-detail" id="detail-2"></div>
+            </div>
+            <button class="details-btn" data-index="2">Detail</button>
+        </li>
+        <li class="book-item">
+            <img src="picture/download (3).jpeg" alt="Atomic Habits">
+            <div class="book-info">
+                <span>"Atomic Habits"</span>
+                <div class="book-detail" id="detail-3"></div>
+            </div>
+            <button class="details-btn" data-index="3">Detail</button>
+        </li>
+        <li class="book-item">
+            <img src="picture/download (4).jpeg" alt="Educated">
+            <div class="book-info">
+                <span>"Educated"</span>
+                <div class="book-detail" id="detail-4"></div>
+            </div>
+            <button class="details-btn" data-index="4">Detail</button>
+        </li>
+    </ul>
+</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
-    <script>
-        const bookDetails = [
-            {
-                title: "10 Langkah Mencerdaskan Kota",
-                detail: "Ditulis oleh Sutriadi, diterbitkan oleh ITB Press pada tahun 2018. Panduan tentang strategi untuk mencerdaskan kota."
-            },
-            {
-                title: "Melangkah",
-                detail: "Ditulis oleh JS Khairen, diterbitkan oleh Gramedia Widiasarana Indonesia pada tahun 2020. Sebuah buku motivasi untuk memulai langkah baru."
-            },
-            {
-                title: "Ilmu Jalanan",
-                detail: "Ditulis oleh Rico Tampenawas, diterbitkan oleh Elex Media Komputindo pada tahun 2018. Membahas pengetahuan yang diperoleh dari pengalaman hidup."
-            },
-            {
-                title: "Mengenal Diri Sendiri",
-                detail: "Ditulis oleh Eka Silvana, diterbitkan oleh Anak Hebat Indonesia pada tahun 2023. Buku ini membahas pentingnya mengenali diri sendiri."
-            },
-            {
-                title: "Outliers (Rahasia di balik kesuksesan)",
-                detail: "Ditulis oleh Malcolm Gladwell, diterbitkan oleh Gramedia Pustaka Utama pada tahun 2020. Buku ini menjelaskan faktor-faktor yang berkontribusi pada kesuksesan."
+<script>
+   const bookDetails = [
+        {
+            title: "The Power of Habit",
+            detail: "Written by Charles Duhigg, published in 2012. A guide to understanding how habits work and how to change them."
+        },
+        {
+            title: "Thinking, Fast and Slow",
+            detail: "Written by Daniel Kahneman, published in 2011. Insights into how our minds work and how we make decisions."
+        },
+        {
+            title: "Sapiens: A Brief History of Humankind",
+            detail: "Written by Yuval Noah Harari, published in 2015. A narrative of human history from the Stone Age to the modern age."
+        },
+        {
+            title: "Atomic Habits",
+            detail: "Written by James Clear, published in 2018. A practical guide on how to form good habits and break bad ones."
+        },
+        {
+            title: "Educated",
+            detail: "Written by Tara Westover, published in 2018. A memoir about a woman who grows up in a strict and abusive household in rural Idaho but eventually escapes to learn about the broader world through education."
+        }
+    ];
+
+    const detailButtons = document.querySelectorAll('.details-btn');
+
+    detailButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const index = this.getAttribute('data-index'); 
+            const detailDiv = document.getElementById(`detail-${index}`);
+
+            if (detailDiv.style.display === "block") {
+                detailDiv.style.display = "none"; 
+            } else {
+                detailDiv.innerHTML = `<h4>Detail Buku:</h4><p>${bookDetails[index].detail}</p>`;
+                detailDiv.style.display = "block"; 
             }
-        ];
-
-        const detailButtons = document.querySelectorAll('.details-btn');
-
-        detailButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const index = this.getAttribute('data-index');
-                const detailDiv = document.getElementById(`detail-${index}`);
-
-                if (detailDiv.style.display === "block") {
-                    detailDiv.style.display = "none";
-                } else {
-                    detailDiv.innerHTML = `<h4>Detail Buku:</h4><p>${bookDetails[index].detail}</p>`;
-                    detailDiv.style.display = "block"; 
-                }
-            });
         });
-    </script> 
+    });
+</script> 
+
 </body>
 </html>
