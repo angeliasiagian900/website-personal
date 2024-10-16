@@ -202,7 +202,56 @@
             <button class="details-btn" data-index="4">Detail</button>
         </li>
     </ul>
+</div>
     
     <div id="book-detail"></div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+<script>
+   const bookDetails = [
+        {
+            title: "The Power of Habit",
+            detail: "Written by Charles Duhigg, published in 2012. A guide to understanding how habits work and how to change them."
+        },
+        {
+            title: "Thinking, Fast and Slow",
+            detail: "Written by Daniel Kahneman, published in 2011. Insights into how our minds work and how we make decisions."
+        },
+        {
+            title: "Sapiens: A Brief History of Humankind",
+            detail: "Written by Yuval Noah Harari, published in 2015. A narrative of human history from the Stone Age to the modern age."
+        },
+        {
+            title: "Atomic Habits",
+            detail: "Written by James Clear, published in 2018. A practical guide on how to form good habits and break bad ones."
+        },
+        {
+            title: "Educated",
+            detail: "Written by Tara Westover, published in 2018. A memoir about a woman who grows up in a strict and abusive household in rural Idaho but eventually escapes to learn about the broader world through education."
+        }
+    ];
+
+    const detailButtons = document.querySelectorAll('.details-btn');
+
+    detailButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const index = this.getAttribute('data-index'); 
+            const detailDiv = document.getElementById('book-detail');
+
+            if (bookDetails[index]) {
+                detailDiv.innerHTML = `<h4>Detail Buku:</h4><p>${bookDetails[index].detail}</p>`;
+            } else {
+                detailDiv.innerHTML = `<p>Detail untuk buku ini tidak tersedia.</p>`;
+            }
+        });
+    });
+</script> 
+
+</body>
+</html>
+
+
     
 
