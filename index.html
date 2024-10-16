@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +5,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-image: url("picture/19546.jpg");
+            background-image: url("picture/19546.jpg")
             background-size: cover;
             color: #333;
             font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .container {
+       .container {
             max-width: 1200px;
             margin: auto;
             background: rgba(255, 255, 255, 0.9);
@@ -36,7 +32,7 @@
         }
 
         section {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         footer {
@@ -68,209 +64,93 @@
         .navbar-brand {
             font-weight: bold;
             font-size: 24px;
-        } 
-
-        .book-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .book-item img {
-            width: 100px; 
-            height: 150px;
-            margin-right: 15px;
-            object-fit: cover;
-        }
-
-        .book-info {
-            flex: 1; 
-            text-align: left; 
-        }
-
-        .details-btn {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 15px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-left: 20px;
-        }
-
-        .details-btn:hover {
-            background-color: #0056b3;
-            transform: translateY(-2px); 
-        }
-
-        .book-detail {
-            margin-top: 10px;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-            background: #f9f9f9;
-            display: none; 
-            width: 100%; 
-        }
+        }   
     </style>
 </head>
-<body>  
+<body> 
 
-<h2 id="tabel-buku" class="text-center mt-5 mb-4">Tabel Bahan Buku</h2>
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>No.</th>
-            <th>Judul Buku</th>
-            <th>Pengarang</th>
-            <th>Penerbit</th>
-            <th>Tahun Terbit</th>
-            <th>Jumlah Halaman</th>
-            <th>ISBN</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>"The Power of Habit"</td>
-            <td>Charles Duhigg</td>
-            <td>Random House</td>
-            <td>2012</td>
-            <td>371</td>
-            <td>978-0812981605</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>"Thinking, Fast and Slow"</td>
-            <td>Daniel Kahneman</td>
-            <td>Farrar, Straus and Giroux</td>
-            <td>2011</td>
-            <td>499</td>
-            <td>978-0374533557</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>"Sapiens: A Brief History of Humankind"</td>
-            <td>Yuval Noah Harari</td>
-            <td>Harper</td>
-            <td>2015</td>
-            <td>498</td>
-            <td>978-0062316097</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>"Atomic Habits"</td>
-            <td>James Clear</td>
-            <td>Avery</td>
-            <td>2018</td>
-            <td>320</td>
-            <td>978-0735211292</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>"Educated"</td>
-            <td>Tara Westover</td>
-            <td>Random House</td>
-            <td>2018</td>
-            <td>334</td>
-            <td>978-0399590504</td>
-        </tr>
-    </tbody>     
-</table>
-
-<div class="container">
-    <h3>Pameran Buku</h3>
-    <ul id="book-list" class="list-unstyled">
-        <li class="book-item">
-            <img src="picture/download.jpeg" alt="The Power of Habit">
-            <div class="book-info">
-                <span>"The Power of Habit"</span>
-                <div class="book-detail" id="detail-0"></div>
+ <div class="container-fluid" style="background-image: url('picture/2457.jpg'); background-size: cover; background-position: center; color: white; text-align: center; padding: 5rem 0;">
+    <nav class="navbar navbar-default" style="background-color: white;">
+        <div class="container-fluid">
+            <div class="navbar-header" style="display: flex; align-items: center;">
+                <a class="navbar-brand text-dark" href="#" style="display: flex; align-items: center;">
+                    <img src="picture/logo-4162287d7641c504ebf8ee4508db0c81.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+                    <span>Perpustakaan UNPRI</span>
+                </a>
             </div>
-            <button class="details-btn" data-index="0">Detail</button>
-        </li>
-        <li class="book-item">
-            <img src="picture/download (1).jpeg" alt="Thinking, Fast and Slow">
-            <div class="book-info">
-                <span>"Thinking, Fast and Slow"</span>
-                <div class="book-detail" id="detail-1"></div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a class="text-dark" href="#">Home</a></li>
+                <li><a class="text-dark" href="media.html">Media</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle text-dark" data-toggle="dropdown" href="#">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-toggle="modal" data-target="#welcomeModal">SELAMAT DATANG</a></li>
+                        <li><a href="formulir.html">Formulir</a></li>
+                        <li><a href="tabel-buku.html">Tabel Buku</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+  <div class="container text-center my-5">
+   <h1 class="display-4">Perpustakaan UNPRI</h1>
+    <h2>Welcome To Perpustakaan Angelia Siagian</h2>
+    <div class="welcome-text bg-light p-4 rounded shadow">
+        <p>
+            Perkenalkan, Nama saya Angelia Siagian dengan NIM 222201004. Ini adalah perpustakaan
+            <i>homepage</i> <b>pertama</b> saya, karena saya baru belajar tentang cara membuat
+            <b><i><a href="https://library.usu.ac.id/" class="text-primary">website Perpustakaan UNPRI MEDAN</a></i></b>.
+        </p>
+    </div>
+    
+    <div class="modal-body" style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); max-width: 800px; margin: auto;">
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #333;">Dukungan Multimedia</h2>
+        <p style="line-height: 1.6;">HTML5 memungkinkan pengembang untuk menyematkan elemen audio dan video secara langsung ke dalam halaman web menggunakan tag <code>&lt;audio&gt;</code> dan <code>&lt;video&gt;</code>. Ini menghilangkan kebutuhan untuk plugin pihak ketiga seperti Adobe Flash, sehingga mempercepat waktu pemuatan halaman dan meningkatkan pengalaman pengguna.</p>
+        
+        <h2 style="color: #333;">Elemen Semantik</h2>
+        <p style="line-height: 1.6;">Elemen semantik HTML5 memberikan makna lebih pada struktur konten di halaman web. Elemen seperti <code>&lt;article&gt;</code> dan <code>&lt;section&gt;</code> membantu mesin pencari memahami konteks konten, yang berkontribusi pada optimasi mesin pencari (SEO).</p>
+        
+        <h2 style="color: #333;">Sintaks yang Lebih Sederhana</h2>
+        <p style="line-height: 1.6;">HTML5 memiliki sintaks yang lebih ringkas dan mudah dipahami dibandingkan dengan versi sebelumnya. Ini memudahkan pengembang dalam menulis dan mengelola kode HTML, serta mengurangi kemungkinan kesalahan.</p>
+        
+        <h2 style="color: #333;">Responsif terhadap Perangkat Mobile</h2>
+        <p style="line-height: 1.6;">HTML5 dirancang untuk mendukung perangkat mobile dengan lebih baik, memungkinkan pembuatan desain responsif yang dapat menyesuaikan tampilan berdasarkan ukuran layar perangkat. Ini sangat penting mengingat meningkatnya penggunaan internet melalui perangkat mobile.</p>
+        
+        <h2 style="color: #333;">Penyimpanan Lokal</h2>
+        <p style="line-height: 1.6;">HTML5 menyediakan kemampuan penyimpanan lokal melalui Local Storage dan Session Storage, memungkinkan aplikasi web menyimpan data di sisi klien tanpa harus terus-menerus terhubung ke server. Ini meningkatkan kinerja aplikasi web dan memungkinkan akses data saat offline.</p>
+        
+        <h2 style="color: #333;">API Geolokasi</h2>
+        <p style="line-height: 1.6;">Dengan HTML5, pengembang dapat menggunakan Geolocation API untuk menentukan lokasi geografis pengguna (dengan izin mereka). Fitur ini sangat berguna untuk aplikasi berbasis lokasi seperti layanan pemetaan atau aplikasi pengantaran.</p>
+        
+        <h2 style="color: #333;">Peningkatan Elemen Formulir</h2>
+        <p style="line-height: 1.6;">HTML5 memperkenalkan berbagai jenis input baru seperti email, date, url, dan lainnya, serta fitur validasi bawaan yang membuat formulir lebih intuitif bagi pengguna.</p>
+    </section>
+</div>
+    <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="welcomeModalLabel">Selamat Datang</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-            <button class="details-btn" data-index="1">Detail</button>
-        </li>
-        <li class="book-item">
-            <img src="picture/download (2).jpeg" alt="Sapiens: A Brief History of Humankind">
-            <div class="book-info">
-                <span>"Sapiens: A Brief History of Humankind"</span>
-                <div class="book-detail" id="detail-2"></div>
+            <div class="modal-body">
+                Selamat datang di Perpustakaan UNPRI Medan! Kami senang Anda di sini.
             </div>
-            <button class="details-btn" data-index="2">Detail</button>
-        </li>
-        <li class="book-item">
-            <img src="picture/download (3).jpeg" alt="Atomic Habits">
-            <div class="book-info">
-                <span>"Atomic Habits"</span>
-                <div class="book-detail" id="detail-3"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
             </div>
-            <button class="details-btn" data-index="3">Detail</button>
-        </li>
-        <li class="book-item">
-            <img src="picture/download (4).jpeg" alt="Educated">
-            <div class="book-info">
-                <span>"Educated"</span>
-                <div class="book-detail" id="detail-4"></div>
-            </div>
-            <button class="details-btn" data-index="4">Detail</button>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    
+ <footer>
+        <p>&copy; 2024 Perpustakaan Angelia Siagian. All Rights Reserved.</p>
+ </footer>
 
-<script>
-   const bookDetails = [
-        {
-            title: "The Power of Habit",
-            detail: "Written by Charles Duhigg, published in 2012. A guide to understanding how habits work and how to change them."
-        },
-        {
-            title: "Thinking, Fast and Slow",
-            detail: "Written by Daniel Kahneman, published in 2011. Insights into how our minds work and how we make decisions."
-        },
-        {
-            title: "Sapiens: A Brief History of Humankind",
-            detail: "Written by Yuval Noah Harari, published in 2015. A narrative of human history from the Stone Age to the modern age."
-        },
-        {
-            title: "Atomic Habits",
-            detail: "Written by James Clear, published in 2018. A practical guide on how to form good habits and break bad ones."
-        },
-        {
-            title: "Educated",
-            detail: "Written by Tara Westover, published in 2018. A memoir about a woman who grows up in a strict and abusive household in rural Idaho but eventually escapes to learn about the broader world through education."
-        }
-    ];
-
-    const detailButtons = document.querySelectorAll('.details-btn');
-
-    detailButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const index = this.getAttribute('data-index'); 
-            const detailDiv = document.getElementById(`detail-${index}`);
-
-            if (detailDiv.style.display === "block") {
-                detailDiv.style.display = "none"; 
-            } else {
-                detailDiv.innerHTML = `<h4>Detail Buku:</h4><p>${bookDetails[index].detail}</p>`;
-                detailDiv.style.display = "block"; 
-            }
-        });
-    });
-</script> 
-
-</body>
-</html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
