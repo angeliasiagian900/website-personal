@@ -69,49 +69,18 @@
             font-weight: bold;
             font-size: 24px;
         }
-           .book-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .book-item img {
-            width: 100px; 
-            height: 150px;
-            margin-right: 15px;
-            object-fit: cover;
-        }
-
-         .details-btn {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 15px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-left: auto; 
-        }
-
-        .details-btn:hover {
-            background-color: #0056b3;
-            transform: translateY(-2px); 
-
-        #book-detail {
-            margin-top: 20px;
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 5px;
-            background: #f9f9f9;
+        .welcome-text, .modal-body {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px; /* Jarak antar section */
         }
     </style>
 </head>
 <body>
 
- <div class="container-fluid" style="background-image: url('picture/2457.jpg'); background-size: cover; background-position: center; color: white; text-align: center; padding: 5rem 0;">
+<div class="container-fluid" style="background-image: url('picture/2457.jpg'); background-size: cover; background-position: center; color: white; text-align: center; padding: 5rem 0;">
     <nav class="navbar navbar-default" style="background-color: white;">
         <div class="container-fluid">
             <div class="navbar-header" style="display: flex; align-items: center;">
@@ -136,10 +105,10 @@
     </nav>
 </div>
 
-  <div class="container text-center my-5">
-   <h1 class="display-4">Perpustakaan UNPRI</h1>
+<div class="container text-center my-5">
+    <h1 class="display-4">Perpustakaan UNPRI</h1>
     <h2>Welcome To Perpustakaan Angelia Siagian</h2>
-    <div class="welcome-text bg-light p-4 rounded shadow">
+    <div class="welcome-text">
         <p>
             Perkenalkan, Nama saya Angelia Siagian dengan NIM 222201004. Ini adalah perpustakaan
             <i>homepage</i> <b>pertama</b> saya, karena saya baru belajar tentang cara membuat
@@ -147,35 +116,33 @@
         </p>
     </div>
 </div>
-    
-    <div class="modal-body" style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); max-width: 800px; margin: auto;">
-    <section style="margin-bottom: 20px;">
-        <h2 style="color: #333;">Dukungan Multimedia</h2>
-        <p style="line-height: 1.6;">HTML5 memungkinkan pengembang untuk menyematkan elemen audio dan video secara langsung ke dalam halaman web menggunakan tag <code>&lt;audio&gt;</code> dan <code>&lt;video&gt;</code>. Ini menghilangkan kebutuhan untuk plugin pihak ketiga seperti Adobe Flash, sehingga mempercepat waktu pemuatan halaman dan meningkatkan pengalaman pengguna.</p>
+
+<div class="modal-body">
+    <section>
+        <h2>Dukungan Multimedia</h2>
+        <p>HTML5 memungkinkan pengembang untuk menyematkan elemen audio dan video secara langsung ke dalam halaman web menggunakan tag <code>&lt;audio&gt;</code> dan <code>&lt;video&gt;</code>. Ini menghilangkan kebutuhan untuk plugin pihak ketiga seperti Adobe Flash, sehingga mempercepat waktu pemuatan halaman dan meningkatkan pengalaman pengguna.</p>
         
-        <h2 style="color: #333;">Elemen Semantik</h2>
-        <p style="line-height: 1.6;">Elemen semantik HTML5 memberikan makna lebih pada struktur konten di halaman web. Elemen seperti <code>&lt;article&gt;</code> dan <code>&lt;section&gt;</code> membantu mesin pencari memahami konteks konten, yang berkontribusi pada optimasi mesin pencari (SEO).</p>
+        <h2>Elemen Semantik</h2>
+        <p>Elemen semantik HTML5 memberikan makna lebih pada struktur konten di halaman web. Elemen seperti <code>&lt;article&gt;</code> dan <code>&lt;section&gt;</code> membantu mesin pencari memahami konteks konten, yang berkontribusi pada optimasi mesin pencari (SEO).</p>
         
-        <h2 style="color: #333;">Sintaks yang Lebih Sederhana</h2>
-        <p style="line-height: 1.6;">HTML5 memiliki sintaks yang lebih ringkas dan mudah dipahami dibandingkan dengan versi sebelumnya. Ini memudahkan pengembang dalam menulis dan mengelola kode HTML, serta mengurangi kemungkinan kesalahan.</p>
+        <h2>Sintaks yang Lebih Sederhana</h2>
+        <p>HTML5 memiliki sintaks yang lebih ringkas dan mudah dipahami dibandingkan dengan versi sebelumnya. Ini memudahkan pengembang dalam menulis dan mengelola kode HTML, serta mengurangi kemungkinan kesalahan.</p>
         
-        <h2 style="color: #333;">Responsif terhadap Perangkat Mobile</h2>
-        <p style="line-height: 1.6;">HTML5 dirancang untuk mendukung perangkat mobile dengan lebih baik, memungkinkan pembuatan desain responsif yang dapat menyesuaikan tampilan berdasarkan ukuran layar perangkat. Ini sangat penting mengingat meningkatnya penggunaan internet melalui perangkat mobile.</p>
+        <h2>Responsif terhadap Perangkat Mobile</h2>
+        <p>HTML5 dirancang untuk mendukung perangkat mobile dengan lebih baik, memungkinkan pembuatan desain responsif yang dapat menyesuaikan tampilan berdasarkan ukuran layar perangkat. Ini sangat penting mengingat meningkatnya penggunaan internet melalui perangkat mobile.</p>
         
-        <h2 style="color: #333;">Penyimpanan Lokal</h2>
-        <p style="line-height: 1.6;">HTML5 menyediakan kemampuan penyimpanan lokal melalui Local Storage dan Session Storage, memungkinkan aplikasi web menyimpan data di sisi klien tanpa harus terus-menerus terhubung ke server. Ini meningkatkan kinerja aplikasi web dan memungkinkan akses data saat offline.</p>
+        <h2>Penyimpanan Lokal</h2>
+        <p>HTML5 menyediakan kemampuan penyimpanan lokal melalui Local Storage dan Session Storage, memungkinkan aplikasi web menyimpan data di sisi klien tanpa harus terus-menerus terhubung ke server. Ini meningkatkan kinerja aplikasi web dan memungkinkan akses data saat offline.</p>
         
-        <h2 style="color: #333;">API Geolokasi</h2>
-        <p style="line-height: 1.6;">Dengan HTML5, pengembang dapat menggunakan Geolocation API untuk menentukan lokasi geografis pengguna (dengan izin mereka). Fitur ini sangat berguna untuk aplikasi berbasis lokasi seperti layanan pemetaan atau aplikasi pengantaran.</p>
+        <h2>API Geolokasi</h2>
+        <p>Dengan HTML5, pengembang dapat menggunakan Geolocation API untuk menentukan lokasi geografis pengguna (dengan izin mereka). Fitur ini sangat berguna untuk aplikasi berbasis lokasi seperti layanan pemetaan atau aplikasi pengantaran.</p>
         
-        <h2 style="color: #333;">Peningkatan Elemen Formulir</h2>
-        <p style="line-height: 1.6;">HTML5 memperkenalkan berbagai jenis input baru seperti email, date, url, dan lainnya, serta fitur validasi bawaan yang membuat formulir lebih intuitif bagi pengguna.</p>
+        <h2>Peningkatan Elemen Formulir</h2>
+        <p>HTML5 memperkenalkan berbagai jenis input baru seperti email, date, url, dan lainnya, serta fitur validasi bawaan yang membuat formulir lebih intuitif bagi pengguna.</p>
     </section>
 </div>
 
-
-
-    <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+<div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -194,13 +161,12 @@
     </div>
 </div>
 
-    
-    <footer>
-        <p>&copy; 2024 Perpustakaan Angelia Siagian. All Rights Reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Perpustakaan Angelia Siagian. All Rights Reserved.</p>
+</footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 </body>
-</html>  
+</html>
