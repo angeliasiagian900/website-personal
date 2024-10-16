@@ -74,15 +74,18 @@
             display: flex;
             align-items: center;
             margin-bottom: 20px;
-            flex-direction: column; /* Ubah ke kolom */
-            text-align: center; /* Rata tengah */
         }
 
         .book-item img {
             width: 100px; 
             height: 150px;
-            margin-bottom: 10px; /* Tambah margin bawah */
+            margin-right: 15px;
             object-fit: cover;
+        }
+
+        .book-info {
+            flex: 1; /* Ambil sisa ruang yang tersedia */
+            text-align: left; /* Rata kiri */
         }
 
         .details-btn {
@@ -96,7 +99,7 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-top: 10px; /* Tambah margin atas */
+            margin-left: 20px; /* Spasi antara tombol dan konten buku */
         }
 
         .details-btn:hover {
@@ -184,33 +187,43 @@
     <ul id="book-list" class="list-unstyled">
         <li class="book-item">
             <img src="picture/download.jpeg" alt="The Power of Habit">
-            <span>"The Power of Habit"</span>
+            <div class="book-info">
+                <span>"The Power of Habit"</span>
+                <div class="book-detail" id="detail-0"></div>
+            </div>
             <button class="details-btn" data-index="0">Detail</button>
-            <div class="book-detail" id="detail-0"></div>
         </li>
         <li class="book-item">
             <img src="picture/download (1).jpeg" alt="Thinking, Fast and Slow">
-            <span>"Thinking, Fast and Slow"</span>
+            <div class="book-info">
+                <span>"Thinking, Fast and Slow"</span>
+                <div class="book-detail" id="detail-1"></div>
+            </div>
             <button class="details-btn" data-index="1">Detail</button>
-            <div class="book-detail" id="detail-1"></div>
         </li>
         <li class="book-item">
             <img src="picture/download (2).jpeg" alt="Sapiens: A Brief History of Humankind">
-            <span>"Sapiens: A Brief History of Humankind"</span>
+            <div class="book-info">
+                <span>"Sapiens: A Brief History of Humankind"</span>
+                <div class="book-detail" id="detail-2"></div>
+            </div>
             <button class="details-btn" data-index="2">Detail</button>
-            <div class="book-detail" id="detail-2"></div>
         </li>
         <li class="book-item">
             <img src="picture/download (3).jpeg" alt="Atomic Habits">
-            <span>"Atomic Habits"</span>
+            <div class="book-info">
+                <span>"Atomic Habits"</span>
+                <div class="book-detail" id="detail-3"></div>
+            </div>
             <button class="details-btn" data-index="3">Detail</button>
-            <div class="book-detail" id="detail-3"></div>
         </li>
         <li class="book-item">
             <img src="picture/download (4).jpeg" alt="Educated">
-            <span>"Educated"</span>
+            <div class="book-info">
+                <span>"Educated"</span>
+                <div class="book-detail" id="detail-4"></div>
+            </div>
             <button class="details-btn" data-index="4">Detail</button>
-            <div class="book-detail" id="detail-4"></div>
         </li>
     </ul>
 </div>
