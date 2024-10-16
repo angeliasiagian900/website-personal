@@ -69,6 +69,7 @@
             font-weight: bold;
             font-size: 24px;
         } 
+
         .book-item {
             display: flex;
             align-items: center;
@@ -82,7 +83,7 @@
             object-fit: cover;
         }
 
-         .details-btn {
+        .details-btn {
             background-color: #007bff;
             color: white;
             border: none;
@@ -99,6 +100,7 @@
         .details-btn:hover {
             background-color: #0056b3;
             transform: translateY(-2px); 
+        }
 
         #book-detail {
             margin-top: 20px;
@@ -203,11 +205,12 @@
         </li>
     </ul>
 </div>
-    
-    <div id="book-detail"></div>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<!-- Memindahkan div detail buku ke luar container -->
+<div id="book-detail" class="container"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 <script>
    const bookDetails = [
@@ -251,7 +254,3 @@
 
 </body>
 </html>
-
-
-    
-
