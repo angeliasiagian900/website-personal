@@ -74,12 +74,14 @@
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+            flex-direction: column; /* Ubah ke kolom */
+            text-align: center; /* Rata tengah */
         }
 
         .book-item img {
             width: 100px; 
             height: 150px;
-            margin-right: 15px;
+            margin-bottom: 10px; /* Tambah margin bawah */
             object-fit: cover;
         }
 
@@ -94,7 +96,7 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-left: auto; 
+            margin-top: 10px; /* Tambah margin atas */
         }
 
         .details-btn:hover {
@@ -102,12 +104,14 @@
             transform: translateY(-2px); 
         }
 
-        #book-detail {
-            margin-top: 20px;
+        .book-detail {
+            margin-top: 10px;
             border: 1px solid #ddd;
-            padding: 15px;
+            padding: 10px;
             border-radius: 5px;
             background: #f9f9f9;
+            display: none; /* Sembunyikan detail awalnya */
+            width: 100%; /* Sesuaikan lebar */
         }
     </style>
 </head>
@@ -182,32 +186,34 @@
             <img src="picture/download.jpeg" alt="The Power of Habit">
             <span>"The Power of Habit"</span>
             <button class="details-btn" data-index="0">Detail</button>
+            <div class="book-detail" id="detail-0"></div>
         </li>
         <li class="book-item">
             <img src="picture/download (1).jpeg" alt="Thinking, Fast and Slow">
             <span>"Thinking, Fast and Slow"</span>
             <button class="details-btn" data-index="1">Detail</button>
+            <div class="book-detail" id="detail-1"></div>
         </li>
         <li class="book-item">
             <img src="picture/download (2).jpeg" alt="Sapiens: A Brief History of Humankind">
             <span>"Sapiens: A Brief History of Humankind"</span>
             <button class="details-btn" data-index="2">Detail</button>
+            <div class="book-detail" id="detail-2"></div>
         </li>
         <li class="book-item">
             <img src="picture/download (3).jpeg" alt="Atomic Habits">
             <span>"Atomic Habits"</span>
             <button class="details-btn" data-index="3">Detail</button>
+            <div class="book-detail" id="detail-3"></div>
         </li>
         <li class="book-item">
             <img src="picture/download (4).jpeg" alt="Educated">
             <span>"Educated"</span>
             <button class="details-btn" data-index="4">Detail</button>
+            <div class="book-detail" id="detail-4"></div>
         </li>
     </ul>
 </div>
-
-<!-- Memindahkan div detail buku ke luar container -->
-<div id="book-detail" class="container"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -241,12 +247,13 @@
     detailButtons.forEach(button => {
         button.addEventListener('click', function() {
             const index = this.getAttribute('data-index'); 
-            const detailDiv = document.getElementById('book-detail');
+            const detailDiv = document.getElementById(`detail-${index}`);
 
-            if (bookDetails[index]) {
-                detailDiv.innerHTML = `<h4>Detail Buku:</h4><p>${bookDetails[index].detail}</p>`;
+            if (detailDiv.style.display === "block") {
+                detailDiv.style.display = "none"; // Sembunyikan jika sudah ditampilkan
             } else {
-                detailDiv.innerHTML = `<p>Detail untuk buku ini tidak tersedia.</p>`;
+                detailDiv.innerHTML = `<h4>Detail Buku:</h4><p>${bookDetails[index].detail}</p>`;
+                detailDiv.style.display = "block"; // Tampilkan detail
             }
         });
     });
