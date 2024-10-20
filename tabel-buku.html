@@ -84,8 +84,8 @@
         }
 
         .book-info {
-            flex: 1; /* Ambil sisa ruang yang tersedia */
-            text-align: left; /* Rata kiri */
+            flex: 1; 
+            text-align: left; 
         }
 
         .details-btn {
@@ -99,7 +99,7 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-left: 20px; /* Spasi antara tombol dan konten buku */
+            margin-left: 20px; 
         }
 
         .details-btn:hover {
@@ -113,8 +113,8 @@
             padding: 10px;
             border-radius: 5px;
             background: #f9f9f9;
-            display: none; /* Sembunyikan detail awalnya */
-            width: 100%; /* Sesuaikan lebar */
+            display: none; 
+            width: 100%; 
         }
     </style>
 </head>
@@ -182,95 +182,10 @@
     </tbody>     
 </table>
 
-<div class="container">
-    <h3>Pameran Buku</h3>
-    <ul id="book-list" class="list-unstyled">
-        <li class="book-item">
-            <img src="picture/download.jpeg" alt="The Power of Habit">
-            <div class="book-info">
-                <span>"The Power of Habit"</span>
-                <div class="book-detail" id="detail-0"></div>
-            </div>
-            <button class="details-btn" data-index="0">Detail</button>
-        </li>
-        <li class="book-item">
-            <img src="picture/download (1).jpeg" alt="Thinking, Fast and Slow">
-            <div class="book-info">
-                <span>"Thinking, Fast and Slow"</span>
-                <div class="book-detail" id="detail-1"></div>
-            </div>
-            <button class="details-btn" data-index="1">Detail</button>
-        </li>
-        <li class="book-item">
-            <img src="picture/download (2).jpeg" alt="Sapiens: A Brief History of Humankind">
-            <div class="book-info">
-                <span>"Sapiens: A Brief History of Humankind"</span>
-                <div class="book-detail" id="detail-2"></div>
-            </div>
-            <button class="details-btn" data-index="2">Detail</button>
-        </li>
-        <li class="book-item">
-            <img src="picture/download (3).jpeg" alt="Atomic Habits">
-            <div class="book-info">
-                <span>"Atomic Habits"</span>
-                <div class="book-detail" id="detail-3"></div>
-            </div>
-            <button class="details-btn" data-index="3">Detail</button>
-        </li>
-        <li class="book-item">
-            <img src="picture/download (4).jpeg" alt="Educated">
-            <div class="book-info">
-                <span>"Educated"</span>
-                <div class="book-detail" id="detail-4"></div>
-            </div>
-            <button class="details-btn" data-index="4">Detail</button>
-        </li>
-    </ul>
-</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
-<script>
-   const bookDetails = [
-        {
-            title: "The Power of Habit",
-            detail: "Written by Charles Duhigg, published in 2012. A guide to understanding how habits work and how to change them."
-        },
-        {
-            title: "Thinking, Fast and Slow",
-            detail: "Written by Daniel Kahneman, published in 2011. Insights into how our minds work and how we make decisions."
-        },
-        {
-            title: "Sapiens: A Brief History of Humankind",
-            detail: "Written by Yuval Noah Harari, published in 2015. A narrative of human history from the Stone Age to the modern age."
-        },
-        {
-            title: "Atomic Habits",
-            detail: "Written by James Clear, published in 2018. A practical guide on how to form good habits and break bad ones."
-        },
-        {
-            title: "Educated",
-            detail: "Written by Tara Westover, published in 2018. A memoir about a woman who grows up in a strict and abusive household in rural Idaho but eventually escapes to learn about the broader world through education."
-        }
-    ];
-
-    const detailButtons = document.querySelectorAll('.details-btn');
-
-    detailButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const index = this.getAttribute('data-index'); 
-            const detailDiv = document.getElementById(`detail-${index}`);
-
-            if (detailDiv.style.display === "block") {
-                detailDiv.style.display = "none"; // Sembunyikan jika sudah ditampilkan
-            } else {
-                detailDiv.innerHTML = `<h4>Detail Buku:</h4><p>${bookDetails[index].detail}</p>`;
-                detailDiv.style.display = "block"; // Tampilkan detail
-            }
-        });
-    });
-</script> 
 
 </body>
 </html>
