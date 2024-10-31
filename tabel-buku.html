@@ -119,6 +119,7 @@
     </style>
 </head>
 <body>  
+     <div id="navbar-placeholder"></div>
 
 <h2 id="tabel-buku" class="text-center mt-5 mb-4">Tabel Bahan Buku</h2>
 <table class="table table-bordered table-striped">
@@ -185,6 +186,12 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+        $("#navbar-placeholder").load("navbar.html");
+    });
+    </script>
+
 
 
 </body>
