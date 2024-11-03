@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian Buku</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("picture/efa2c05b-5f7e-430f-a22e-867136c5e31e.jpg");
+            background-size: cover;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            color: #444;
+            text-align: center;
+        }
+
+        .book {
+            margin: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            width: 150px;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: #fff;
+            transition: transform 0.2s;
+        }
+
+        .book:hover {
+            transform: scale(1.05);
+        }
+
+        .book img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        #book-details {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+        }
+
+        .details-container {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .book-info {
+            margin-left: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: nowrap; 
+            overflow-x: auto; 
+            padding: 10px 0; 
+        }
+
+        .book-list::-webkit-scrollbar {
+            height: 8px; 
+        }
+
+        .book-list::-webkit-scrollbar-thumb {
+            background: #ccc; 
+            border-radius: 10px;
+        }
+
+        .book-list::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <div class="container text-center my-5">
+        <h1 class="display-4 font-weight-bold text-primary">Pencarian Buku</h1>
+        <input type="text" id="search" class="form-control mb-4" placeholder="Cari buku...">
+        <div id="book-list" class="book-list">
+            <div class="book" data-title="The Power of Habit" data-author="Charles Duhigg" data-publisher="Random House" data-isbn="978-0812981605" data-year="2012" data-pages="371">
+                <img src="picture/download.jpeg" alt="10 Langkah Mencerdaskan Kota">
+                <p>10 Langkah Mencerdaskan Kota</p>
+            </div>
+            <div class="book" data-title="Thinking, Fast and Slow" data-author="Daniel Kahneman" data-publisher="Farrar, Straus and Giroux" data-isbn="978-0374533557" data-year="2011" data-pages="499">
+                <img src="picture/download (1).jpeg" alt="Melangkah">
+                <p>Melangkah</p>
+            </div>
+            <div class="book" data-title="Sapiens: A Brief History of Humankind" data-author="Yuval Noah Harari" data-publisher="Harper" data-isbn="978-0062316097" data-year="2015" data-pages="498">
+                <img src="picture/download (2).jpeg" alt="Ilmu Jalanan">
+                <p>Ilmu Jalanan</p>
+            </div>
+            <div class="book" data-title="Atomic Habits" data-author="James Clear" data-publisher="Avery" data-isbn="978-0735211292" data-year="2018" data-pages="320">
+                <img src="picture/download (3).jpeg" alt="Mengenal Diri Sendiri">
+                <p>Mengenal Diri Sendiri</p>
+            </div>
+            <div class="book" data-title="Educated" data-author="Tara Westover" data-publisher="Random House" data-isbn="978-0399590504" data-year="2018" data-pages="344">
+                <img src="picture/download (4).jpeg" alt="Outliers (Rahasia di balik kesuksesan)">
+                <p>Outliers (Rahasia di balik kesuksesan)</p>
+            </div>
+        </div>
+
+        <div id="book-details" class="details-container">
+            <div class="book-img">
+                <img id="detail-image" src="" alt="Detail Buku" style="width: 150px; height: auto; border-radius: 10px;">
+            </div>
+            <div class="book-info">
+                <h2>Detail Buku</h2>
+                <p id="detail-title"></p>
+                <p id="detail-author"></p>
+                <p id="detail-publisher"></p>
+                <p id="detail-isbn"></p>
+                <p id="detail-year"></p>
+                <p id="detail-pages"></p>
+                <button id="close-details" class="btn btn-danger">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Perpustakaan Wince Simarmata. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+    <script>
+        $(function(){
+        $("#navbar-placeholder").load("navbar.html");
+        });
+        $(document).ready(function() {
+            $('#search').on('input', function() {
+                const query = $(this).val().toLowerCase();
+                $('.book').each(function() {
+                    const title = $(this).data('title').toLowerCase();
+                    if (title.includes(query)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+
+            $('.book').on('click', function() {
+                const title = $(this).data('title');
+                const author = $(this).data('author');
+                const publisher = $(this).data('publisher');
+                const isbn = $(this).data('isbn');
+                const year = $(this).data('year');
+                const pages = $(this).data('pages');
+                const image = $(this).find('img').attr('src');
+
+                $('#detail-image').attr('src', image);
+                $('#detail-title').text('Judul: ' + title);
+                $('#detail-author').text('Pengarang: ' + author);
+                $('#detail-publisher').text('Penerbit: ' + publisher);
+                $('#detail-isbn').text('ISBN: ' + isbn);
+                $('#detail-year').text('Tahun Terbit: ' + year);
+                $('#detail-pages').text('Jumlah Halaman: ' + pages);
+
+                $('#book-details').show();
+            });
+
+            $('#close-details').on('click', function() {
+                $('#book-details').hide();
+            });
+        });
+    </script>
+</body>
+</html>
