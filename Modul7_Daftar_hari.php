@@ -153,7 +153,7 @@
                         confirmButtonText: 'Kembali'
                     }).then((result) => {
                         if (result.isConfirmed) {
-                            window.location.href = 'daftar_hari.php#login';
+                            window.location.href = 'Modul7_Daftar_hari.php#login';
                         }
                     });
                 </script>";
